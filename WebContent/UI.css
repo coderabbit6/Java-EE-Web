@@ -1,0 +1,60 @@
+	html,body{            
+			width:100%;            
+			height:100%
+	        }
+
+	body{            
+	    	font-family: "华文细黑";            
+		    background:url("timg.jpg") no-repeat;            
+		    background-size: 100%;        
+	    }        
+	#div_login{            
+		width:500px;            
+		height: 500px;            
+		background-color:rgba(58,58,58,0.5);            
+		float:left;            
+		margin:50px 50px;            
+		padding: 0px;        
+	}        
+	#div_title{            
+		width: 500px;            
+		height: 60px;            
+		background-color:rgba(0,0,0,0.5);            
+		text-align: center;            
+		line-height: 60px;            
+		color:blanchedalmond;        
+	}        
+	*{            
+			margin:0px;            
+			padding: 0px;        }        
+	#midden{            
+		width:500px;            
+		height: 440px;            
+		background-color: rgba(77, 75, 75, 0.5);        
+		}        
+	.inputinfo{            
+		width: 400px;            
+		height:30px;            
+		margin:10px 10px 10px 10px;        
+		}        
+	.submitbutton{            
+		width: 400px;            
+		height:30px;            
+		margin:10px 10px 10px 10px;            
+		background-color: rgba(89, 89, 89, 0.5)        
+		}
+	.login{
+		background-color: #4CAF50; /* Green */
+	    border: none;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	}
+	#info{            
+		width:200px;            
+		text-align: center;            
+		margin: 0 auto;        
+	}
