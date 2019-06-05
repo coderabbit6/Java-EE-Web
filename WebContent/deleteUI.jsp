@@ -12,10 +12,10 @@ pageEncoding="UTF-8"%>
 </head>
 <body1>
 <div id="home">
-<input class = "abc" type="button" value="录入成绩" onclick="window.location='insertUI.jsp'" />
-<input class = "abc" type="button" value="查询成绩" onclick="window.location='showUI.jsp'" />
-<input class = "abc" type="button" value="修改成绩" onclick="window.location='amentUI.jsp'" />
-<input class = "abc" type="button" value="删除成绩" onclick="window.location='deleteUI.jsp'" />
+<form action = "delete.jsp" method="post">
+<p>学号：<input class="inputinfo1"  type="text" name="UserName" placeholder="请输入你的名字">  </p>
+<input type="submit" id="putin" class="lll" value = "删除">
+</form>
 </div>
 </body1>
 </html>

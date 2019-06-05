@@ -22,10 +22,10 @@ pageEncoding="UTF-8"%>
 	out.println("<script language='javascript'>alert('数据库连接成功！');</script>");     
 	PreparedStatement pStmt = conn.prepareStatement("select * from grade where name = '" + user + "'");      
 	ResultSet rs = pStmt.executeQuery();  				          
-	PreparedStatement tmt = conn.prepareStatement("Insert into grade(name,Java,Web,graph,ai) values('" + user + "','" + javag + "','" + Webg + "','" + graphg + "','" + aig + "')");            
+	PreparedStatement tmt = conn.prepareStatement("update grade set Java = '" + javag + "'"+",Web = '" + Webg + "'"+",graph = '" + graphg + "'"+",ai = '" + aig + "'"+"Where name = '" + user + "'");            
 		int rst = tmt.executeUpdate();            
 		if (rst != 0){                  
-			out.println("<script language='javascript'>alert('录入成绩成功！');window.location.href='Home.jsp';</script>");              
+			out.println("<script language='javascript'>alert('修改成绩成功！');window.location.href='Home.jsp';</script>");              
 			}          
 		else{                  
 			out.println("<script language='javascript'>alert('失败');window.location.href='Home.jsp';</script>");              

@@ -12,7 +12,7 @@
 	width:100px;
 	height:50px;
 	margin:50px 20px;
-	background: -webkit-linear-gradient(left, gray , blue); /* Safari 5.1 - 6.0 */
+	background: -webkit-linear-gradient(left, gray , blue); 
 	box-shadow: 5px 5px 3px #dddddd;
 
 }
@@ -31,6 +31,20 @@
 
 body
 {
-	background-image:url('timg.jpg');            
+	background-image:url('timg1.jpg');            
 	background-size: 100%;
+}
+
+body1
+{
+	background-image:url('timg1.jpg');            
+	background-size: 100%;
+}
+.abc{
+	width:100px;
+	height:50px;
+	margin:50px 20px;
+	background: -webkit-linear-gradient(left, red , blue); 
+	box-shadow: 5px 5px 3px #dddddd;
+	
 }

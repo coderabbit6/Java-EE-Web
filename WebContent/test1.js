@@ -41,6 +41,7 @@ $(document).ready(function(){
 	}
 	
 	$("#login1").click(function(){
+		$("body").css({"background-imag":url("timg.jpg"),"background-size":"100%"});
 		alert("登录成功");
 	});
 	

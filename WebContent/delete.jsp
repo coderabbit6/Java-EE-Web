@@ -17,17 +17,14 @@ try {
     String password = "123456";  //数据库用户密码
     Connection conn = DriverManager.getConnection(url, user, password);  //连接状态
 
-    if(conn != null){             
-        Statement stmt = null;  
-        ResultSet rs = null;  
-        stmt = conn.createStatement();
-        out.println(username);
-        String sql = "SELECT * FROM grade WHERE name =" + "\""+username+"\"";  //查询语句
+    if(conn != null){               
 
-        rs = stmt.executeQuery(sql);
- 
-
-        out.print("查询结果：");  
+        out.println(username); 
+    	PreparedStatement pStmt = conn.prepareStatement("delete  from grade where name = '" + username + "'");  
+    	pStmt.execute();  
+    	pStmt = conn.prepareStatement("select * from grade where name = '" + username + "'"); 
+    	out.println("删除成功！"); 
+    	ResultSet rs = pStmt.executeQuery();  
         out.println("<table border='1' width='100%'>");
         out.println("<tr>");
         out.println("<th>学号</th>");
@@ -42,9 +39,13 @@ try {
     else{  
         out.print("连接失败！");  
     }  
-}catch (Exception e) {        
-    out.print("数据库连接异常！");  
-}  
+}catch (ClassNotFoundException e) {
+	            // TODO Auto-generated catch block
+	           e.printStackTrace();
+	       } catch (SQLException e) {
+	            // TODO Auto-generated catch block
+	           e.printStackTrace();
+       } 
 %>
 </body1>
 </html>
